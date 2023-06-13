@@ -6,8 +6,7 @@
             :key="activity.id"
             :to="activity.slug"
         >
-        <h2>{{ activity.title }}</h2>
-        <!-- <p><a :href="activity.url">Audio</a></p> -->
+        <h2 class="my-4 hover:text-blue-300 hover:font-bold">{{ activity.title }}</h2>
         </router-link>
     </div>
 </template>

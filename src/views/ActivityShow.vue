@@ -1,12 +1,12 @@
 <template>
-  <h1 class="text-xl text-gray-700">{{ activity.title }}</h1>
   <h2 class="text-lg text-blue-700">Activity {{ activityId }}</h2>
+  <h1 class="text-xl text-gray-700">{{ activity.title }}</h1>
   <audio controls>
     <source :src="activity.audiosrc" type="audio/mpeg">
     Your browser does not support the audio element.
   </audio>
   <div v-for="(question, index) in activity.questions" :key="index">
-      <p>{{ question.text }}</p>
+      <p class="font-bold">{{ question.text }}</p>
       <ul>
         <li v-for="(option, optionIndex) in question.options" :key="optionIndex">
           <label :class="{ 'selected': isSelected(index, optionIndex) }">
@@ -22,7 +22,7 @@
     @click="checkAnswer"
     :disabled="!allQuestionsAnswered || submitted"
     :class="{ 'disabled': !allQuestionsAnswered || submitted }"
-    class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+    class="bg-blue-500 hover:bg-blue-700 text-white font-bold my-4 py-2 px-4 rounded"
   >
     Check Answers
   </button>

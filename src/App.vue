@@ -1,13 +1,12 @@
 <script>
-import TheNavigation from '@/components/TheNavigation.vue'
-export default {
-  components: {TheNavigation}
-}
+
 </script>
 
 <template>
-  <TheNavigation/>
-  <div class="container mx-auto">
+  <nav class="text-blue-700 text-xl text-center mx-auto font-bold underline h-16 bg-sky-300">
+    <router-link to="/" class="align-middle">Home</router-link>
+  </nav>
+  <div class="container mx-auto w-96">
     <router-view></router-view>
   </div>
 </template>
