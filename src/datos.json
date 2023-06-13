@@ -1,0 +1,51 @@
+{
+  "activities": [
+    {
+      "id": 1,
+      "title": "Interesting Hobbies",
+      "slug": "activity/1",
+      "audiosrc": "https://english22.s3.amazonaws.com/hobbies-4-people.mp3",
+      "questions": [
+        {
+          "text": "What's Bill's hobby?",
+          "options": ["He's into cars", "He sells cars", "He's into bikes"],
+          "answerIndex": 2
+        },
+        {
+          "text": "Does Bill get money from his hobby?",
+          "options": ["Yes, he does", "No, he doesn't", "He's not into making money"],
+          "answerIndex": 0
+        },
+        {
+          "text": "What is Sue's hobby?",
+          "options": ["Hiking", "Biking", "She's busy with work"],
+          "answerIndex": 0
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "The fiesta",
+      "slug": "activity/2",
+      "audiosrc": "https://english22.s3.amazonaws.com/celebrations-fiesta.mp3",
+      "questions": [
+        {
+          "text": "What is a fiesta?",
+          "options": ["A fair", "A festival", "A birthday party"],
+          "answerIndex": 1
+        },
+        {
+          "text": "Do people wear costumes for the fiesta?",
+          "options": ["Yes, they do", "No, they don't", "Hardly ever"],
+          "answerIndex": 0
+        },
+        {
+          "text": "Does Tina like parades?",
+          "options": ["She's big on festivals", "Yes, she does", "Not really"],
+          "answerIndex": 2
+        }
+      ]
+    }
+  ]
+}
+

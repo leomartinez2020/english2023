@@ -1,0 +1,22 @@
+{
+    "activities": [
+        {
+            "id": 1,
+            "name": "Activity 1",
+            "slug": "activity1",
+            "url": "https://english22.s3.amazonaws.com/celebrations-fiesta.mp3"
+        },
+        {
+            "id": 2,
+            "name": "Activity 2",
+            "slug": "activity2",
+            "url": "https://english22.s3.amazonaws.com/celebrations-fiesta.mp3"
+        },
+        {
+            "id": 3,
+            "name": "Activity 3",
+            "slug": "activity3",
+            "url": "https://english22.s3.amazonaws.com/celebrations-fiesta.mp3"
+        }
+    ]
+}
