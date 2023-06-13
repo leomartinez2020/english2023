@@ -75,6 +75,115 @@
           "answerIndex": 0
         }
       ]
+    },
+    {
+      "id": 3,
+      "title": "Mom's birthday",
+      "slug": "activity/3",
+      "audiosrc": "https://english22.s3.amazonaws.com/celebrations-mom-birthday.mp3",
+      "questions": [
+        {
+          "text": "When is mom's birthday?",
+          "options": ["On the first", "On the fifth", "On the twelfth"],
+          "answerIndex": 0
+        },
+        {
+          "text": "What is Alicia going to buy her?",
+          "options": ["A suitcase", "A special food", "A necklace"],
+          "answerIndex": 2
+        },
+        {
+          "text": "When is mom and dad's anniversary?",
+          "options": ["On the 50th", "On the 12th", "On the 10th"],
+          "answerIndex": 2
+        },
+        {
+          "text": "What are Dave and Alicia going give their parents?",
+          "options": ["Cards", "Flowers", "A cake"],
+          "answerIndex": 1
+        },
+        {
+          "text": "When is Dave's birthday?",
+          "options": ["On the 23th", "On the 31th", "On the 21th"],
+          "answerIndex": 0
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "title": "International Dishes",
+      "slug": "activity/4",
+      "audiosrc": "https://english22.s3.amazonaws.com/international-dishes.mp3",
+      "questions": [
+        {
+          "text": "Does Richard want to eat Mexican food tonight",
+          "options": ["Yes, he does", "No, he doesn't", "They don't say"],
+          "answerIndex": 1
+        },
+        {
+          "text": "Does he want Italian?",
+          "options": ["No, he doesn't", "Italian food is bad", "He doesn't know the place"],
+          "answerIndex": 0
+        },
+        {
+          "text": "Japanese food is Richard's favorite",
+          "options": ["True", "False", "They don't say"],
+          "answerIndex": 1
+        },
+        {
+          "text": "Richard doesn't like spicy food",
+          "options": ["True", "False", "They don't say"],
+          "answerIndex": 0
+        },
+        {
+          "text": "Karen loves Brazilian and Indian food",
+           "options": ["True", "False", "They don't say"],
+           "answerIndex": 0
+        },
+        {
+          "text": "Can you eat all you want at the Chinese restaurant?",
+          "options": ["No. At the Thai restaurant", "No, you can't", "Yes, you can"],
+          "answerIndex": 2
+        },
+        {
+          "text": "Richard is a picky eater",
+          "options": ["True", "False", "They don't say"],
+          "answerIndex": 0
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "title": "Jessica's weekend",
+      "slug": "activity/5",
+      "audiosrc": "https://english22.s3.amazonaws.com/vacation-dialog-past-tense.mp3",
+      "questions": [
+        {
+          "text": "How was Jessica's weekend?",
+          "options": ["Boring", "Great", "Fantastic"],
+          "answerIndex": 1
+        },
+        {
+          "text": "What did she do?",
+          "options": ["She went snorkeling", "She went hiking", "She went biking"],
+          "answerIndex": 2
+        },
+        {
+          "text": "Who did she go with?",
+          "options": ["With Gina", "With Tina", "With her boss"],
+          "answerIndex": 0
+        },
+        {
+          "text": "What did Ben do?",
+          "options": ["He had a party", "He had a meeting", "He was exhausted"],
+          "answerIndex": 0
+        },
+        {
+          "text": "Ben has a ________ today",
+          "options": ["date", "meeting", "party"],
+          "answerIndex": 1
+        }
+      ]
     }
   ]
 }
