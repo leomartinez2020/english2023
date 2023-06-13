@@ -20,6 +20,31 @@
           "text": "What is Sue's hobby?",
           "options": ["Hiking", "Biking", "She's busy with work"],
           "answerIndex": 0
+        },
+        {
+          "text": "How often does Sue go hiking?",
+          "options": ["Quite often", "A couple of times a year", "Every weekend"],
+          "answerIndex": 1
+        },
+        {
+          "text": "What is Jeff's hobby?",
+          "options": ["Soccer", "Basketball", "Baseball"],
+          "answerIndex": 2
+        },
+        {
+          "text": "What does he collect?",
+          "options": ["Cards", "Cars", "TVs"],
+          "answerIndex": 0
+        },
+        {
+          "text": "What is Lori's hobby?",
+          "options": ["Editing videos", "Making movies", "Making music"],
+          "answerIndex": 0
+        },
+        {
+          "text": "Is she very good at her hobby?",
+          "options": ["Yes, she is", "No, she isn't", "She's an expert"],
+          "answerIndex": 1
         }
       ]
     },
@@ -43,6 +68,11 @@
           "text": "Does Tina like parades?",
           "options": ["She's big on festivals", "Yes, she does", "Not really"],
           "answerIndex": 2
+        },
+        {
+          "text": "What else can you find at the fiesta?",
+          "options": ["Food", "All kinds of music", "Crafts"],
+          "answerIndex": 0
         }
       ]
     }

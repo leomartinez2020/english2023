@@ -5,11 +5,35 @@
     <source :src="activity.audiosrc" type="audio/mpeg">
     Your browser does not support the audio element.
   </audio>
-  <div v-for="question in activity.questions">
+  <div v-for="(question, index) in activity.questions" :key="index">
       <p>{{ question.text }}</p>
-      <ol class="list-disc">
-        <li v-for="option in question.options">{{ option }}</li>
-      </ol>
+      <ul>
+        <li v-for="(option, optionIndex) in question.options" :key="optionIndex">
+          <label :class="{ 'selected': isSelected(index, optionIndex) }">
+            <input type="radio" :value="optionIndex" v-model="selectedOptions[index]" :disabled="submitted">
+            {{ option }}
+            <span v-if="isSelected(index, optionIndex) && isCorrect(index, optionIndex) && submitted">&#10004;</span>
+            <span v-if="isSelected(index, optionIndex) && !isCorrect(index, optionIndex) && submitted">&#10008;</span>
+          </label>
+        </li>
+      </ul>
+  </div>
+  <button
+    @click="checkAnswer"
+    :disabled="!allQuestionsAnswered || submitted"
+    :class="{ 'disabled': !allQuestionsAnswered || submitted }"
+    class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+  >
+    Check Answers
+  </button>
+  <button
+    @click="resetForm"
+    class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 ml-8 rounded"
+  >
+    Reset Form
+  </button>
+  <div v-if="results">
+    <p class="font-bold"><span class="text-blue-700">Results</span>: you got {{ correctAnswers }} out of {{ activity.questions.length }} questions correct!</p>
   </div>    
 </template>
 
@@ -35,9 +59,9 @@ export default {
     numberOfQuestions() {
       return this.activity.questions.length;
     },
-    //allQuestionsAnswered() {
-      //return this.selectedOptions.every(option => option !== null);
-    //}
+    allQuestionsAnswered() {
+      return this.selectedOptions.every(option => option !== null);
+    }
   },
   methods: {
     isCorrect(questionIndex, optionIndex) {
@@ -66,3 +90,13 @@ export default {
   },
 }
 </script>
+
+<style>
+.correct {
+  color: green;
+}
+
+.selected {
+  font-weight: bold;
+}
+</style>

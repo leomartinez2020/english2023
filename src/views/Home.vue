@@ -1,6 +1,6 @@
 <template>
-    <div>
-        <h1 class="text-3xl font-bold underline">All Activities</h1>
+    <div class="">
+        <h1 class="text-3xl font-bold text-blue-700">All Listening Activities</h1>
         <router-link
             v-for="activity in activities"
             :key="activity.id"
