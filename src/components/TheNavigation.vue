@@ -6,7 +6,6 @@
 
 <style>
 .nav .active-link {
-  color: red;
   text-decoration: underline;
   font-weight: bold;
 }
